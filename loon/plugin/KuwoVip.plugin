@@ -6,6 +6,5 @@
 hostname =*kuwo*,*lrts*
 
 [Script]
-http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) requires-body=1, script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/kwyy.js, tag=酷我年费会员
-
-http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui)) requires-body=0, script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/kwyy.js, tag=酷我年费会员1
+http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/kwyy.js, requires-body=true, timeout=10
+http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui)) script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/kwyy.js, requires-body=false, timeout=10,
