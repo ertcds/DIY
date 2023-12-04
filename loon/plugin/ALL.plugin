@@ -11,4 +11,6 @@ hostname =api.io111.com, glados.rocks
 
 http-response ^https?:\/\/glados.rocks\/api\/user\/checkin script-path=https://gist.githubusercontent.com/ddgksf2013/32b3d37d78433a34370cbfb69780160d/raw/glados.js, requires-body=false, timeout=10
 
+http-response ^https:\/\/api\.io111\.com\/api\/system_setting\/getSystemSetting script-path=https://raw.githubusercontent.com/gjwj666/qx/main/mjai.js, requires-body=true, timeout=10
+
 #cron "0 8 * * *" script-path=https://gist.githubusercontent.com/ddgksf2013/32b3d37d78433a34370cbfb69780160d/raw/glados.js,tag = MJ中文版,enable=true
