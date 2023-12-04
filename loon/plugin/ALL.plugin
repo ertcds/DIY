@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/kuwo.png
 
 [Mitm]
-hostname =api.io111.com, glados.rocks
+hostname =api.io111.com,glados.rocks
 
 [Script]
 #http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/kwyy.js, requires-body=true, timeout=10
